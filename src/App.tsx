@@ -7,6 +7,7 @@ import { Cards } from "./pages/Cards";
 import { Profile } from "./pages/Profile";
 import { Send } from "./pages/Send";
 import { DarkModeProvider } from './contexts/DarkModeContext';
+import { HashRouter as Router } from 'react-router-dom';
 
 export function App() {
   return (
