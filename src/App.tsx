@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { Navigation } from "./components/Navigation";
 import { Dashboard } from "./pages/Dashboard";
 import { Transactions } from "./pages/Transactions";
@@ -7,12 +7,11 @@ import { Cards } from "./pages/Cards";
 import { Profile } from "./pages/Profile";
 import { Send } from "./pages/Send";
 import { DarkModeProvider } from './contexts/DarkModeContext';
-import { HashRouter as Router } from 'react-router-dom';
 
 export function App() {
   return (
     <DarkModeProvider>
-      <BrowserRouter>
+      <HashRouter>
         <div className="fixed inset-0 w-full h-full max-w-[430px] mx-auto bg-gray-50 dark:bg-gray-900 flex flex-col overflow-hidden">
           <div className="flex-1 overflow-y-auto no-scrollbar">
             <Routes>
@@ -25,7 +24,7 @@ export function App() {
           </div>
           <Navigation />
         </div>
-      </BrowserRouter>
+      </HashRouter>
     </DarkModeProvider>
   );
 }
