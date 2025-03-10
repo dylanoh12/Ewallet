@@ -67,7 +67,7 @@ export function AddCardModal({ isOpen, onClose, onSubmit }: AddCardModalProps) {
               value={cardData.cardHolder}
               onChange={(e) => setCardData({ ...cardData, cardHolder: e.target.value.toUpperCase() })}
               className="w-full p-4 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-xl text-gray-900 dark:text-white"
-              placeholder="JOHN DOE"
+              placeholder="ADRIAN WINN"
             />
           </div>
 
